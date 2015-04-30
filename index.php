@@ -1,12 +1,12 @@
 <?php
-
+include("config.php");
 mb_internal_encoding("UTF-8");
 //require './data.php';
 
 echo '<meta charset="UTF-8">';
 
 $mysqli = new mysqli;
-$mysqli->mysqli('localhost', 'root', 'fykos1', 'labyrint_jar_2015', null, null);
+$mysqli->mysqli(_DB_HOST, _DB_USER, _DB_PASS, _DB_NAME, null, null);
 $mysqli->query("SET NAMES 'utf8'");
 $mysqli->query('SET CHARACTER SET utf8');
 
